@@ -12,7 +12,7 @@
 }
 
 .middle {
-  width: 60%;
+  width: 80%;
   height: 100%;
   overflow-y: auto;
 }
@@ -52,4 +52,17 @@
   padding: 0;
   min-width: auto;
   color: #fff;
+}
+
+.middle.show-full-side {
+  width: 60%;
+}
+
+.side.side-right {
+  width: 0;
+  padding: 0;
+}
+.show-full-side.side-right {
+  width: 20%;
+  padding: 20px;
 }

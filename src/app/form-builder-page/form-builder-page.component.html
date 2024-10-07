@@ -23,11 +23,10 @@
     </mat-accordion>
 
   </div>
-  <div class="middle">
+  <div class="middle" [ngClass]="{'show-full-side': (field | json) != '{}'}">
     <app-form [form]="form" (selectedField)="setSelectedField($event)" [sectionIds]="sectionIds"></app-form>
   </div>
-  <div class="side">
-    <h3 class="title">attributes</h3>
+  <div class="side side-right" [ngClass]="{'show-full-side': (field | json) != '{}'}">
     <app-attributes [field]="field"></app-attributes>
   </div>
 </div>

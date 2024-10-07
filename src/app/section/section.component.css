@@ -12,6 +12,7 @@
 .delete-icon {
   color: #ff0000;
   cursor: grab;
+  margin: 0 8px;
 }
 
 .visible-icon {
@@ -21,7 +22,12 @@
 .selected {
   padding: 5px;
   border-radius: 5px;
-  background: #dde4e1;
+  background: #67a5c3;
+  color: #ffffff;
+}
+
+.selected .visible-icon, .selected .handle-icon {
+  color: #ffffff;
 }
 
 .section {

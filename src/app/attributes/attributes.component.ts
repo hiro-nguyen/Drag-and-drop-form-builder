@@ -26,7 +26,7 @@ export class AttributesComponent implements OnInit {
     if (this.field.type === 'select') {
       this.field.options.push({
         value: 'val',
-        label: 'lbl'
+        label: 'Alphaway'
       });
     } else {
       // for fieldset option
