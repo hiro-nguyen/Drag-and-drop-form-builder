@@ -8,7 +8,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
               </span>`,
   styles: [`
     .notification {
-      color: #076b5f;
+      color: #03567e;
     }
   `],
 })

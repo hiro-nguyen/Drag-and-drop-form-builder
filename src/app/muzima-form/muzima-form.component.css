@@ -1,9 +1,6 @@
 .form {
-  padding: 5px;
-  min-height: 500px;
-  -webkit-box-shadow: -1px -11px 25px 1px rgba(83,84,83,0.77);
-  -moz-box-shadow: -1px -11px 25px 1px rgba(83,84,83,0.77);
-  box-shadow: -1px -11px 25px 1px rgba(83,84,83,0.77);
+  padding: 12px;
+  min-height: 100vh;
 }
 
 .form > *{

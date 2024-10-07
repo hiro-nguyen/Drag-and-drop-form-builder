@@ -1,13 +1,31 @@
 .open {
-    background-color: #178E7E; 
+    background-color: #03699b; 
     color: #fff;
 }
 
 .close {
-    background-color: #076B5F; 
+    background-color: #03567e; 
 }
 
+.fieldsList {
+    padding-top: 12px;
+}
 .fieldsList button {
     width: 100%;
     margin-bottom: 5px;
+    text-align: left;
+}
+
+.mat-expansion-panel {
+    margin: 16px 0;
+}
+
+.mat-expansion-panel-header {
+    height: 58px!important;
+}
+
+.mat-expansion-panel-header-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }

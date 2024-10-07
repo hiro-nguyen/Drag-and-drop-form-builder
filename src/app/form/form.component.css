@@ -5,19 +5,19 @@
 }
 
 .mat-ink-bar{
-    background-color: #076b5f;
+    background-color: #03567e;
     width: 50%;
 }
 
 [aria-label=primary] {
-    background-color: #076b5f;
+    background-color: #03567e;
     width: 50%;
 }
 
 .copy-icon {
     float: right;
     cursor: pointer;
-    color: #076b5f;
+    color: #03567e;
     margin: 20px;
 }
 

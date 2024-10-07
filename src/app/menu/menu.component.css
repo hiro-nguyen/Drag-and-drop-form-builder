@@ -31,11 +31,11 @@ li a {
 }
 
 li:hover {
-  border-bottom: 1px solid #076b5f6b;
+  border-bottom: 1px solid #03567e6b;
 }
 
 li a:hover {
-  color: #076b5f;
+  color: #03567e;
 }
 
 .closed {

@@ -2,7 +2,7 @@
   [ngClass]="{'open': panelOpenState, 'close': !panelOpenState}">
   <mat-expansion-panel-header>
     <mat-panel-title>
-      {{category?.name}}
+      <mat-icon>{{category?.icon}}</mat-icon> {{category?.name}}
     </mat-panel-title>
     <mat-panel-description>
     </mat-panel-description>
@@ -12,7 +12,7 @@
     [cdkDropListData]="category?.fields"
     [cdkDropListConnectedTo]="sectionIds" class="fieldsList">
 
-    <button mat-button routerLink="." *ngFor="let field of category?.fields" cdkDrag>{{ field.type }}</button>
+    <button mat-button routerLink="." *ngFor="let field of category?.fields" cdkDrag><mat-icon style="margin-right: 4px;">drag_indicator</mat-icon> {{ field.name }}</button>
 
   </div>
 </mat-expansion-panel>

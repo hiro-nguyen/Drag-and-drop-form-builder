@@ -1,4 +1,4 @@
-<mat-tab-group [color]="color" [backgroundColor]="">
+<!-- <mat-tab-group [color]="color" [backgroundColor]="">
   <mat-tab label="CODE" [aria-label]=color >
     <div class="tab-content">
       <mat-icon class="copy-icon" (click)="copyMessage()">file_copy</mat-icon>
@@ -13,4 +13,6 @@
       </app-muzima-form>
     </div>
   </mat-tab>
-</mat-tab-group>
+</mat-tab-group> -->
+<app-muzima-form [form]="form" (selectedField)="select($event)" (htmlCodeEmitter)="selHtmlCode($event)" [sectionIds]="sectionIds">
+</app-muzima-form>
