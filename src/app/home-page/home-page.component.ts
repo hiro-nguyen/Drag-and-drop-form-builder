@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { PopupComponent } from '../popup/popup.component';
+import { FormService } from '../form.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home-page',
@@ -48,7 +50,7 @@ export class HomePageComponent implements OnInit {
     }
   ];
 
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog, private router: Router, private formService: FormService) {}
 
   openDialog(): void {
     const dialogRef = this.dialog.open(PopupComponent, {
@@ -72,4 +74,8 @@ export class HomePageComponent implements OnInit {
   ngOnInit() {
   }
 
+  openFormBuilder() {
+    this.formService.setForm(this.forms[0]);
+    this.router.navigate(['formBuilder']);
+  }
 }

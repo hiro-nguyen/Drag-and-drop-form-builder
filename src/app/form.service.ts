@@ -1,20 +1,26 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class FormService {
-
   private form;
 
-  constructor() { }
+  constructor() {}
 
   setForm(form) {
     this.form = form;
   }
 
   getForm() {
-    return this.form;
+    if (this.form && this.form.name) {
+      return this.form;
+    } else {
+      return {
+        name: "Form Name",
+        description: "a basic form",
+        sections: [],
+      };
+    }
   }
-
 }

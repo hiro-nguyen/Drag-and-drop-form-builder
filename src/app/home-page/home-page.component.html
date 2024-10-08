@@ -1,6 +1,6 @@
-<div class="container">
+<!-- <div class="container"> -->
 
-  <app-search (searchTextEmitter)="setSearchText($event)" class="search-input" ></app-search>
+  <!-- <app-search (searchTextEmitter)="setSearchText($event)" class="search-input" ></app-search>
 
   <button class="add-form" mat-raised-button color="accent" (click)="openDialog()">
     <mat-icon>add</mat-icon> FORM
@@ -9,6 +9,12 @@
   <div class="form-container">
     <app-form-view *ngFor="let form of forms | filter:searchText; index as i" [form]="form" [withControls]="true"
     (deleteFormEmitter)="deleteForm(i)"></app-form-view>
+  </div> -->
+  <div class="home-page-wrap">
+    <img src="/assets/images/alphaway_logo.png" width="600" alt=""/>
+    <button class="new-form" mat-raised-button (click)="openFormBuilder()">
+      <mat-icon>add_circle</mat-icon>CREATE FORM
+    </button>
   </div>
 
-</div>
+<!-- </div> -->

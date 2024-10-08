@@ -24,3 +24,37 @@
   border-radius: 2.5em;
   padding: 0px 15px;
 }
+
+.home-page-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
+  padding: 60px;
+  box-sizing: border-box;
+}
+
+.new-form {
+  width: 240px;
+  height: 62px;
+  background-color: #e45122;
+  color: #fff;
+  margin-bottom: 120px;
+  font-size: 18px;
+}
+::ng-deep .new-form .mat-icon {
+  font-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+::ng-deep .new-form .mat-button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
